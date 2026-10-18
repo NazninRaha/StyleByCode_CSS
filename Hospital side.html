@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Hospital</title>
+	<style type="text/css">
+		body 
+		{
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+		}
+
+		.top-bar
+		{
+			background-color: skyblue;
+			color: #000;
+			text-align: center;
+			padding: 10px 0;
+			font-size: 14px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.auth-links
+		{
+			float: right;
+			margin-right: 20px;
+		}
+
+		.auth-links a 
+		{
+			text-decoration: none;
+		}
+
+		.logo-search
+		{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+			background-color: white;
+		}
+		
+		.logo 
+		{
+			width: 100px;
+			border-radius: 5px;
+		}
+
+		.search-box
+		{
+			flex-grow: 1;
+			margin: 0 20px;
+		}
+
+		.search-box input 
+		{
+			width: 80%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+
+		}
+
+		nav 
+		{
+			position: sticky;
+			top: 0px;
+			background-color: lightseagreen;
+			padding: 10px;
+			text-align: center;
+			z-index: 999;
+		}
+
+		nav ul li 
+		{
+			display: inline;
+			margin: 0 15px;
+		}
+
+		nav ul li a 
+		{
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+
+		}
+		.container
+		{
+			display: flex;
+			margin: 20px;
+		}
+		.categories
+		{
+			width: 20%;
+			background-color: white;
+			padding: 20px;
+			border-right: 1px solid #ddd;
+		}
+		.categories h1
+		{
+			font-size: 18px;
+			border-bottom: 2px solid #028A0F;
+			padding-bottom: 10px;
+		}
+		.categories ul 
+		{
+			list-style: none;
+			padding: 0;
+		}
+		.categories ul li 
+		{
+			padding: 10px 0;
+			border-bottom: 1px solid lightblue;
+		}
+
+		.banner
+		{
+			width: 75%;
+			padding: 50px;
+			text-align: center;
+			background: url(images/Hospital.png) no-repeat center center/cover;
+			color: white;
+			position: relative;
+			
+
+		}
+
+		.banner h1
+		{
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		.banner p 
+		{
+			font-size: 18px;
+		}
+
+		.banner button
+		{
+			padding: 10px 20px;
+			border: none;
+			background-color: #FFA500;
+			font-size: 16px;
+			color: white;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.products
+		{
+			display: grid;
+			grid-template-columns:repeat(4, 1fr) ;
+			gap: 15px;
+			margin: 20px;
+		}
+
+		.product-card img 
+		{
+			width: 100px;
+			height: auto;
+			border-radius: 8px;
+		}
+
+		.product-card p 
+		{
+			font-size: 14px;
+			margin: 10px 0;
+		}
+
+		.product-card button
+		{
+			padding: 5px 10px;
+			border: none;
+			background-color: #FFA500;
+			color: white;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		footer 
+		{
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: relative;
+			bottom: 0;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="top-bar">
+			<p>Have any questions? Call us at  09666-710678</p>
+			<div class="auth-links" style="position: absolute; top: 10px; right: 20px;">
+				<a href="#">Sign In</a> | <a href="#">Sign Up</a>
+			</div>
+		</div>
+
+		<div class="logo-search">
+			<img src="images/hospital logo.png" alt="not found" class="logo">
+			<div class="search-box">
+				<input type="text" name="search" placeholder="search here...">
+				<button>Search</button>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Health Check</a></li>
+			<li><a href="#">Online Report</a></li>
+			<li><a href="#">Career</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<aside class="categories">
+			<h1>Categories</h1>
+			<ul>
+				<li>Accident & Emergency</li>
+				<li>Anesthesia & Pain Medicine</li>
+				<li>Cancer Care Center</li>
+				<li>Counselling Center</li>
+				<li>Dental & Maxillofacial Surgery</li>
+				<li>Diabetilogy & Endocrinology</li>
+				<li>Dermatology & Venereology</li>
+			</ul>
+		</aside>
+
+		<section class="banner">
+			<h1>Better Quality Treatment</h1>
+			<p>Transforming Healthcare in Bangladesh</p>
+			<button>Service</button>
+		</section>
+	</div>
+
+	<section class="products">
+		<div class="product-card">
+			<img src="images/doctor2.png" alt="doctor1">
+			<p>Dr. Jasmin Manzoor</p>
+			<p>MBBS, DDSc (UK), MDSc (USA)</p>
+			<p>Department:Dermatology & Venereology</p>
+			<button>Appoinment Now</button>
+		</div>
+
+		<div class="product-card">
+			<img src="images/doctor4.png" alt="doctor1">
+			<p>Prof. Dr. M. Istiaque Hossain</p>
+			<p>MBBS (DMC), DCH (Scotland), MRCP (UK), FRCP (Edinburgh)</p>
+			<p>Department :
+Neonatology</p>
+			<button>Appoinment Now</button>
+		</div>
+
+		<div class="product-card">
+			<img src="images/doctor5.png" alt="doctor1">
+			<p>Prof. Dr. Masroor Hasan</p>
+			<p>MBBS, FCPS (Surgery), MS (Plastic Surgery), MRCS</p>
+			<p>Department :
+Plastic, Reconstructive & Cosmetic Surgery</p>
+			<button>Appoinment Now</button>
+		</div>
+
+		<div class="product-card">
+			<img src="images/doctor6.png" alt="doctor1">
+			<p>Dr. Monowara Begum</p>
+			<p>MBBS, FCPS (BCPS), MS (Obs./Gynae.)</p>
+			<p>MBBS, FCPS (BCPS), MS (Obs./Gynae.)</p>
+			<button>Appoinment Now</button>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; 2025 Dcc (Sutrapur), Dhaka - Based on your past activity
+ - Update location</p>
+	</footer>
+
+
+</body>
+</html>

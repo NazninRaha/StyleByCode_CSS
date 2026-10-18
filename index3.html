@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products Home page</title>
+
+	<style type="text/css">
+		body
+		{
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+		}
+
+		.top-bar
+		{
+			background-color: #f8f8f8;
+			color: #000;
+			text-align: center;
+			padding: 10px 0;
+			font-size: 14px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.auth-links
+		{
+			float: right;
+			margin-right: 20px;
+		}
+
+		.auth-links a
+		{
+			text-decoration: none;
+		}
+
+		.logo-search
+		{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+			background-color: white;
+		}
+
+		.logo
+		{
+			width: 100px;
+			border-radius: 5px;
+		}
+
+		.search-box
+		{
+			flex-grow: 1;
+			margin: 0 20px;
+		}
+
+		.search-box input
+		{
+			width: 80%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		nav
+		{
+			position: sticky;
+			top: 0px;
+			background-color: #028A0F;
+			padding: 10px;
+			text-align: center;
+			z-index: 999;
+		}
+
+		nav ul li
+		{
+			display: inline;
+			margin: 0 15px;
+		}
+
+		nav ul li a
+		{
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+
+		}
+
+		.container
+		{
+			display: flex;
+			margin: 20px;
+		}
+
+		.categories
+		{
+			width: 20%;
+			background-color: white;
+			padding: 20px;
+			border-right: 1px solid #ddd;
+		}
+
+		.categories h1
+		{
+			font-size: 18px;
+			border-bottom: 2px solid #028A0F;
+			padding-bottom: 10px;
+		}
+
+		.categories ul
+		{
+			list-style: none;
+			padding: 0;
+		}
+
+		.categories ul li
+		{
+			padding: 10px 0;
+			border-bottom: 1px solid green;
+		}
+
+		.banner
+		{
+			width: 75%;
+			padding: 50px;
+			text-align: center;
+			background: url('images/offer.png') no-repeat center center/cover;
+			color: white;
+			position: relative;
+		}
+
+		.banner h1
+		{
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		.banner p
+		{
+			font-size: 18px;
+		}
+
+		.banner button
+		{
+			padding: 10px 20px;
+			border: none;
+			background-color: #FFA500;
+			color: white;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.products
+		{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 15px;
+			margin: 20px;
+		}
+
+		.product-card img
+		{
+			width: 200px;
+			height: auto;
+			border-radius: 8px;
+		}
+
+		.product-card p
+		{
+			font-size: 14px;
+			margin: 10px 0;
+		}
+
+		.product-card button
+		{
+			padding: 5px 10px;
+			border: none;
+			background-color: #FFA500;
+			color: white;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		footer
+		{
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: 10px 0;
+			position: relative;
+			bottom: 0;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="top-bar">
+			<p>have any questions? Call us at 01720626250</p>
+			<div class="auth-links" style="position: absolute; top: 10px; right: 20px;">
+				<a href="#">Sign In</a> | <a href="#">Sign Up</a>
+			</div>
+		</div>
+		<div class="logo-search">
+			<img src="images/unimart logo.png" alt="not found" class="logo">
+			<div class="search-box">
+				<input type="text" name="search" placeholder="Search here...">
+				<button>Search</button>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Combo Offer</a></li>
+			<li><a href="#">Catagories</a></li>
+			<li><a href="#">Home Delivery</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<aside class="categories">
+			<h1>Categories</h1>
+			<ul>
+				<li>Food & Grocery</li>
+				<li>Winter Offer</li>
+				<li>Frouts & Vegitables</li>
+				<li>Snaks Item</li>
+				<li>Weeknnd Day</li>
+				<li>Kids & Toys</li>
+				<li>Home Decoration</li>
+			</ul>
+		</aside>
+
+		<section class="banner">
+			<h1>Winter Offer</h1>
+			<p>SUPER SAVER FOR YOUE MONEY</p>
+			<button>Shop Now</button>
+		</section>
+	</div>
+
+	<section class="products">
+		<div class="product-card">
+			<img src="images/winter offer.png" alt="product 1">
+			<p>Product name</p>
+			<button>Buy Now</button>
+		</div>
+
+		<div class="product-card">
+			<img src="images/winter offer2.png" alt="product 2">
+			<p>Product name</p>
+			<button>Buy Now</button>
+		</div>
+
+		<div class="product-card">
+			<img src="images/winter offer3.png" alt="product 3">
+			<p>Product name</p>
+			<button>Buy Now</button>
+		</div>
+
+		<div class="product-card">
+			<img src="images/winter offer4.png" alt="product 4">
+			<p>Product name</p>
+			<button>Buy Now</button>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; 2025 E-commerce, All rights reserved.</p>
+	</footer>
+</body>
+</html>
